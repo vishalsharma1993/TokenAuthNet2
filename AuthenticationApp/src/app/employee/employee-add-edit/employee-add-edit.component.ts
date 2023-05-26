@@ -139,7 +139,7 @@ export class EmployeeAddEditComponent implements OnInit {
       });
   };
   onSubmit(): void {
-    if (this.form.invalid) {
+    if (this.form.invalid) {//for testing
       this.toastr.error("Please Enter Required Fields.", "error");
     } else {
       if (this.form.value.id == undefined|| this.form.value.id == 0) {
